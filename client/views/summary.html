@@ -1,0 +1,46 @@
+<template name="summary">
+<h1>Summary of all orders</h1>
+<h3> We will be in contact shortly with a proof of your design.</h3>
+   {{#each summarys}}
+      {{> summaryItem}}
+    {{/each}}
+    End of summary 
+</template>
+
+
+
+<template name="summaryItem">
+ <div  class="row-fluid">
+<div class="span1"></div>
+<div class="span5">
+
+<h3>Your Details:</h3>
+<dl class="dl-horizontal">
+
+            <dt>Window Height</dt><dd> {{windowHeight}} </dd>
+           <dt> window Width</dt><dd> {{windowWidth}} </dd>
+            <dt>First Name</dt><dd> {{firstName}} </dd>
+            <dt>Second Name</dt><dd> {{secondName}} </dd>
+            <dt>Phone Number</dt><dd> {{phoneNumber}} </dd>
+            <dt>Email Address</dt><dd> {{emailAddress}} </dd>
+            <dt>House Name/No.</dt><dd> {{houseNo}} </dd>
+            <dt>Street</dt><dd> {{street}} </dd>
+            <dt>Address 2</dt><dd> {{address2}} </dd>
+            <dt>Address 3</dt><dd> {{address3}} </dd>
+            <dt>Town</dt><dd> {{town}} </dd>
+            <dt>County</dt><dd> {{county}} </dd>
+            <dt>Post Code</dt><dd> {{postCode}} </dd>
+            <dt>Comments</dt><dd> {{comments}} </dd>
+
+</dl>
+
+</div>
+<div class="span5">
+    <h3>Your Image:</h3>
+            <img src="{{imageURL}}">
+
+</div>
+</div>
+
+
+   </template>

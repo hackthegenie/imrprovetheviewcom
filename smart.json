@@ -1,0 +1,11 @@
+{
+  "packages": {
+    "router": {},
+    "flatstrap": {},
+    "filepicker": {},
+    "jquery-ui": {},
+    "iron-router": {},
+    "spin": {},
+    "z-mongo-admin": {}
+  }
+}
